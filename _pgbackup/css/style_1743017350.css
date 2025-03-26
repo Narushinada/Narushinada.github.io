@@ -14,7 +14,6 @@ a {
 }
 
 #masthead {
-    height: 150px;
 }
 
 #top_nav {
@@ -41,10 +40,21 @@ a {
 }
 
 #footer {
+    float: none;
+    padding: 2px;
+    width: 896px;
+    height: 23px;
+
+    /* background-color: #443C68; */
 }
 
 .footer_box {
     padding: 2px;
+    float: none;
+    width: 892px;
+    height: 23px;
+
+    /* background-color: #443C68; */
 }
 
 .link_nav {
