@@ -1,0 +1,21 @@
+                <!-- <li class="mb-1">
+                  <button class="align-items-center btn btn-toggle collapsed fw-semibold module-link rounded text-start w-100" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+                    Menu<i class="bi bi-arrow-down-short"></i>
+                  </button>
+                  <div class="collapse" id="dashboard-collapse" style="">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                      <li>
+                        <a href="#" class="fs-6 module-link nav-link"></a>
+                      </li>
+                      <li>
+                        <a href="#" class="fs-6 module-link nav-link">Weekly</a>
+                      </li>
+                      <li>
+                        <a href="#" class="fs-6 module-link nav-link">Monthly</a>
+                      </li>
+                      <li>
+                        <a href="#" class="fs-6 module-link nav-link">Annually</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li> -->

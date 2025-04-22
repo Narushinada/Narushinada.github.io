@@ -1,0 +1,21 @@
+/* "my-CreamyWhite": #FFF8E7,  // Background for most content areas.
+--bs-my-CharcoalGrey : #2E2E2E, // Footer, text on light backgrounds, or to create elegant contrast.
+--bs-my-TomatoRed : #D72638,    // Primary buttons, headings, call-to-action areas (like "Order Now").
+--bs-my-OliveGreen  #3F784C,   // Highlights, navigation hover effects, or to accent certain sections like "About Us" or "Sustainability".
+--bs-my-PizzaCrustBeige :#E2C290// Secondary buttons, hover backgrounds, or decorative accents. */
+.module {
+}
+
+.module-link {
+    border-radius: 0.3rem;
+    text-align: center;
+    border: 0.1rem none #000000;
+    margin-bottom: 0.2rem;
+
+    /* background-color: var(--bs-my-DarkerCrust) */
+}
+
+.module-link:hover {
+    background-color: var(--bs-my-OliveGreen);
+    color: var(--bs-my-CreamyWhite);
+}
