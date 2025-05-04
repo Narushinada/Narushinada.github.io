@@ -14,57 +14,89 @@
     <!-- Custom styles for this template -->
     <!-- <link rel="stylesheet" href="blocks.css"/> -->
     <link href="/style.css" rel="stylesheet"/>
-  <script>/* Pinegrow Interactions, do not remove */ (function(){try{if(!document.documentElement.hasAttribute('data-pg-ia-disabled')) { window.pgia_small_mq=typeof pgia_small_mq=='string'?pgia_small_mq:'(max-width:767px)';window.pgia_large_mq=typeof pgia_large_mq=='string'?pgia_large_mq:'(min-width:768px)';var style = document.createElement('style');var pgcss='html:not(.pg-ia-no-preview) [data-pg-ia-hide=""] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show=""] {opacity:1;visibility:visible;display:block;}';if(document.documentElement.hasAttribute('data-pg-id') && document.documentElement.hasAttribute('data-pg-mobile')) {pgia_small_mq='(min-width:0)';pgia_large_mq='(min-width:99999px)'} pgcss+='@media ' + pgia_small_mq + '{ html:not(.pg-ia-no-preview) [data-pg-ia-hide="mobile"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="mobile"] {opacity:1;visibility:visible;display:block;}}';pgcss+='@media ' + pgia_large_mq + '{html:not(.pg-ia-no-preview) [data-pg-ia-hide="desktop"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="desktop"] {opacity:1;visibility:visible;display:block;}}';style.innerHTML=pgcss;document.querySelector('head').appendChild(style);}}catch(e){console&&console.log(e);}})()</script></head>
+  <script>
+      /* Pinegrow Interactions, do not remove */ (function () {
+        try {
+          if (!document.documentElement.hasAttribute("data-pg-ia-disabled")) {
+            window.pgia_small_mq =
+              typeof pgia_small_mq == "string"
+                ? pgia_small_mq
+                : "(max-width:767px)";
+            window.pgia_large_mq =
+              typeof pgia_large_mq == "string"
+                ? pgia_large_mq
+                : "(min-width:768px)";
+            var style = document.createElement("style");
+            var pgcss =
+              'html:not(.pg-ia-no-preview) [data-pg-ia-hide=""] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show=""] {opacity:1;visibility:visible;display:block;}';
+            if (
+              document.documentElement.hasAttribute("data-pg-id") &&
+              document.documentElement.hasAttribute("data-pg-mobile")
+            ) {
+              pgia_small_mq = "(min-width:0)";
+              pgia_large_mq = "(min-width:99999px)";
+            }
+            pgcss +=
+              "@media " +
+              pgia_small_mq +
+              '{ html:not(.pg-ia-no-preview) [data-pg-ia-hide="mobile"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="mobile"] {opacity:1;visibility:visible;display:block;}}';
+            pgcss +=
+              "@media " +
+              pgia_large_mq +
+              '{html:not(.pg-ia-no-preview) [data-pg-ia-hide="desktop"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="desktop"] {opacity:1;visibility:visible;display:block;}}';
+            style.innerHTML = pgcss;
+            document.querySelector("head").appendChild(style);
+          }
+        } catch (e) {
+          console && console.log(e);
+        }
+      })();
+    </script></head>
   <body id="theme-default ">
     <div class="container mw-100">
       <div class="row" data-pg-name="Image">
         <img src="https://images.unsplash.com/photo-1666079805650-88894bc6a46b?ixid=M3wyMDkyMnwwfDF8c2VhcmNofDI0OXx8cGl6emVyaWF8ZW58MHx8fHwxNzQ1MzE4MTA3fDA&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=1980&h=600&fit=crop" sizes="83vw,
 (min-width: 576px) 96vw" class="p-0"/>
       </div>
-      <div class="row">
-        <nav class="bg-my-menu-bg navbar navbar-expand-lg">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">Matthew&apos;s Pizza</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler34" aria-controls="" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="row" data-pg-name="Navbar">
+        <nav class="bg-light border-3 border-bottom border-secondary border-top navbar navbar-expand-lg navbar-light"> 
+                    <div class="container-fluid"> <a class="navbar-brand" href="#">Matthew's Pizza</a> 
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler23" aria-controls="" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
-            </button><div class="btn-group" role="group" aria-label="Basic example"><button type="button" class="btn btn-secondary" onclick="setTheme('default')">Default </button> 
-                            <button type="button" class="btn btn-secondary" id="toggleThemeDeu" onclick="setTheme('deuteranopia')">Deuteranopia</button>                             
+            </button>                         
 
-                            <button type="button" class="btn btn-secondary" id="toggleThemePro" onclick="setTheme('protanopia')">Protanopia</button>                             
+                        <div class="collapse navbar-collapse" id="navbarToggler23"> 
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0"> 
+                                <li class="nav-item">
+                  <a class="nav-link active" href="#">Home</a>
+                </li>                                 
 
-                            <button type="button" class="btn btn-secondary" id="toggleThemeTri" onclick="setTheme('tritanopia')">Tritanopia</button>                             
-                        </div>
-            <!-- <div class="collapse navbar-collapse" id="navbarToggler34">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="active nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
+                                <li class="nav-item"><a class="nav-link" href="#">Link</a></li>                                 
+
+                                <li class="nav-item">
                   <a class="nav-link disabled" href="#">Disabled</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink35" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown link
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink35">
-                    <a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
-                  </div>
-                </li>
-              </ul>
-            </div> -->
-          </div>
-        </nav>
+                </li>                                 
+
+                                <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink24" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Color Accesiblity</a> 
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink24">
+                    <a class="dropdown-item" href="#" onclick='setTheme("default")'>Default</a>
+                    <a class="dropdown-item" href="#" onclick='setTheme("deuteranopia")'>Deuteranopia</a>
+                    <a class="dropdown-item" href="#" onclick='setTheme("protanopia")'>Protanopia</a>
+                    <a class="dropdown-item" href="#" onclick='setTheme("tritanopia")'>Tritanopia</a>
+                  </div>                                     
+                                </li>                                 
+                            </ul>                                                          
+                        </div>                         
+                    </div>                     
+                </nav>
       </div>
       <div class="row" data-pg-name="Main">
         <div class="col-lg-2 m-1" data-pg-name="LSidebar">
-          <div class="bg-body bg-my-PizzaCrustBeige border border-2 border-my-PizzaCrustBeige mb-1 rounded rounded-1 row" data-pg-name="NavBar">
+          <div class="border border-2 border-secondary mb-1 rounded rounded-1 row" data-pg-name="NavBar">
             <div class="p-1">
               <ul class="list-unstyled ps-0">
                 <li class="mb-1">
-                  <button class="align-items-center btn btn-toggle collapsed fw-semibold module-link rounded text-start w-100" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+                  <button class="align-items-center btn btn-toggle collapsed fw-semibold module-link text-start w-100" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
                     Home<i class="bi bi-arrow-down-short"></i>
                   </button>
                   <div class="collapse show" id="home-collapse">
@@ -85,12 +117,12 @@
                   </div>
                 </li>
                 <li class="mb-1">
-                  <a href=""><button class="align-items-center btn fw-semibold module-link rounded text-start w-100" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+                  <a href=""><button class="align-items-center btn fw-semibold module-link text-start w-100" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
                       Menu
                     </button></a>
                 </li>
                 <li class="mb-1">
-                  <button class="align-items-center btn btn-toggle collapsed fw-semibold module-link rounded text-start w-100" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+                  <button class="align-items-center btn btn-toggle collapsed fw-semibold module-link text-start w-100" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
                     Interaktywna grafika laby<i class="bi bi-arrow-down-short"></i>
                   </button>
                   <div class="collapse" id="orders-collapse">
@@ -114,11 +146,77 @@
             </div>
           </div>
         </div>
-        <div class="border border-2 border-my-PizzaCrustBeige col-lg m-1 rounded rounded-1" data-pg-name="MainContent" data-pgc-field="MainContent">
-          <h3>MAIN</h3>
+        <div class="border border-2 border-secondary col-lg m-1 rounded rounded-1" data-pg-name="MainContent" data-pgc-field="MainConentEdit">
+          <h3>MAIN</h3><div id="page_content"> 
+                        <div class="article"> 
+                            <div class="article_title">Lorem ipsum dolor sit amet</div>                             
+                            <div class="article_summary">
+                                <div>Summary:</div>
+                                Summary about lorem ipsum Etiam imperdiet arcu est, in facilisis
+                                lacus. Nunc faucibus orci nec diam ullamcorper vitae hendrerit
+                                enim scelerisque. Fusce odio nulla, aliquet in auctor ac, congue
+                                quis turpis. Nunc et ipsum sem. Donec mollis erat neque. Donec
+                                ultricies lectus quis lacus sagittis non ultrices odio auctor.
+                                Vivamus erat nunc, mollis et posuere non, elementum tempor mi.
+                            </div>                             
+                            <div class="article_content"> 
+                                <p class="p1">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                  imperdiet arcu est, in facilisis lacus. Nunc faucibus orci nec
+                  diam ullamcorper vitae hendrerit enim scelerisque. Fusce odio
+                  nulla, aliquet in auctor ac, congue quis turpis. Nunc et ipsum
+                  sem. Donec mollis erat neque. Donec ultricies lectus quis
+                  lacus sagittis non ultrices odio auctor. Vivamus erat nunc,
+                  mollis et posuere non, elementum tempor mi. </p> 
+                                <p class="p2">Some lorem ipsum tekst</p> 
+                                <ul>
+                                    <li>Duis vitae est turpis.</li>
+                                    <li>Praesent elit lacus,</li>
+                                </ul>                                 
+                                <ol> 
+                                    <li>Duis vitae est turpis.</li>                                     
+                                    <li>Praesent elit lacus,</li>                                     
+                                    <li>Pellentesque sed mollis sit amet,</li>                                     
+                                    <li>Auctor id ligula. Sed nec sodales velit.</li>                                     
+                                    <ul>
+                                        <li>Duis vitae est turpis.</li>
+                                        <li>Praesent elit lacus,</li>
+                                    </ul>                                     
+                                    <li>Pellentesque sed mollis sit amet,</li>                                     
+                                    <li>Auctor id ligula. Sed nec sodales velit.</li>                                     
+                                </ol>                                 
+                                <p class="p3"></p> 
+                            </div>                             
+                        </div>                         
+                        <p>
+              Proin felis velit, blandit sit amet viverra quis, bibendum ut
+              turpis. Morbi leo leo, ornare id sollicitudin egestas, euismod
+              eget erat. Mauris porta tempor rhoncus. Pellentesque consequat
+              sapien a dui tempus tempor. Aenean augue purus, volutpat nec
+              semper vitae, tempor in eros. Praesent sed est eu odio iaculis
+              condimentum sed in felis. Aenean quis orci enim. Maecenas blandit
+              risus sit amet enim interdum in tempus lectus sollicitudin. Fusce
+              mi urna, consequat venenatis lobortis vitae, consequat eget purus.
+              Nunc blandit dolor non arcu mollis vel fermentum nibh consequat.
+              Phasellus sed urna neque, quis laoreet nunc. Vestibulum id quam
+              sed lectus tincidunt dapibus. Morbi vehicula ornare metus vel
+              tristique. Proin felis diam, laoreet sed feugiat et, luctus eu
+              nisi. Integer vel metus elit. </p> 
+                        <p>
+              Quisque eget turpis lectus. Nam sit amet massa libero, a accumsan
+              diam. Mauris ac placerat dolor. Vestibulum vel erat a felis mattis
+              convallis nec id sapien. Duis ornare dui nec diam placerat at
+              volutpat tortor dignissim. Sed ornare aliquet auctor. Nam et
+              tellus vitae ipsum faucibus ultrices id eleifend mauris.
+              Pellentesque et molestie ligula. Nullam augue risus, elementum sit
+              amet pellentesque ac, gravida at lorem. Sed hendrerit mauris sed
+              diam sodales quis sodales ligula condimentum. In consectetur
+              tincidunt est vitae consectetur. </p> 
+                    </div>
+          
         </div>
         <div class="col-lg-2 m-1" data-pg-name="RSidebar">
-          <div class="bg-my-PizzaCrustBeige rounded rounded-1 row" data-pg-name="Modules">
+          <div class="bg-my-PizzaCrustBeige border border-2 border-secondary rounded rounded-1 row" data-pg-name="Modules">
             <div class="p-1">
               <div class="text-center" data-pg-name="module_title">
                 <span>Menu</span>
@@ -131,7 +229,7 @@
           </div>
         </div>
       </div>
-      <div class="row" data-pg-name="Footer">
+      <div class="bg-dark row text-light" data-pg-name="Footer">
         <footer class="bg-my-CharcoalGrey text-white">
           <div class="container">
             <!-- <div class="row">
@@ -175,7 +273,7 @@
             </div>
           </div>
         </footer>
-      </div>
+      </div><div class="row"></div>
     </div>
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -185,28 +283,3 @@
   <script src="../pgia/lib/pgia.js"></script>
   <script src="/js/Interaktywna/color-accesibility.js"></script></body>
 </html>
-<!--[Pinegrow components saved data - this data is no longer used in the component. We're saving it just in case. Clear this with Components -> Clear saved unused edits]<div class="border border-2 border-my-PizzaCrustBeige col-lg m-1 rounded rounded-1" data-pg-name="MainContent" data-pgc-field="MainContent">
-          <h3>MAIN</h3>
-        </div><div class="border border-2 border-my-PizzaCrustBeige col-lg m-1 rounded rounded-1" data-pg-name="MainContent" data-pgc-field="MainContent">
-          <h3>MAIN</h3>
-
-          <div class="album d-flex flex-wrap">
-            <div class="thumbnail" onclick="showPhoto(this)">
-                <img alt="Zdjęcie 1" src="https://images.unsplash.com/photo-1628840042765-356cda07504e?crop=entropy&cs=srgb&fm=jpg&ixid=M3wyMDkyMnwwfDF8c2VhcmNofDQ4fHxwaXp6YXxlbnwwfHx8fDE3NDUzOTk4NzF8MA&ixlib=rb-4.0.3&q=85">
-            </div><div class="thumbnail" onclick="showPhoto(this)">
-                <img alt="Zdjęcie 1" src="https://images.unsplash.com/photo-1628840042765-356cda07504e?crop=entropy&cs=srgb&fm=jpg&ixid=M3wyMDkyMnwwfDF8c2VhcmNofDQ4fHxwaXp6YXxlbnwwfHx8fDE3NDUzOTk4NzF8MA&ixlib=rb-4.0.3&q=85">
-            </div><div class="thumbnail" onclick="showPhoto(this)">
-                <img alt="Zdjęcie 1" src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?ixid=M3wyMDkyMnwwfDF8c2VhcmNofDV8fHBpenphfGVufDB8fHx8MTc0NTM5OTg2MXww&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=800&h=800&fit=crop">
-            </div><div class="thumbnail" onclick="showPhoto(this)">
-                <img alt="Zdjęcie 1" src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?ixid=M3wyMDkyMnwwfDF8c2VhcmNofDZ8fHBpenphfGVufDB8fHx8MTc0NTM5OTg2MXww&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=800&h=800&fit=crop">
-            </div>
-            [[[-- Dodaj kolejne miniaturki w podobny sposób --]]]
-          </div>
-        <div class="photo-viewer" id="photoViewer">
-              <img src="" alt="Wybrane Zdjęcie">
-          </div>
-        <script src="/js/Interaktywna/lab02script.js"></script>
-
-        </div><div class="border border-2 border-my-PizzaCrustBeige col-lg m-1 rounded rounded-1" data-pg-name="MainContent" data-pgc-field="MainContent">
-          <h3>Column&nbsp;</h3>
-        </div>-->
