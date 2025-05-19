@@ -1,0 +1,149 @@
+.album {
+}
+.image-album {
+  width: 200px;
+  padding: 0.1rem;
+}
+.thumbnail {
+  width: 200px;
+  height: auto;
+  transform-origin: center;
+  animation-fill-mode: forwards;
+}
+/* -------------Animacje--------------- */
+@keyframes scatter1 {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate(-200px, -100px) rotate(-25deg);
+  }
+}
+@keyframes scatter2 {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate(100px, -150px) rotate(30deg);
+  }
+}
+@keyframes scatter3 {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate(-150px, 50px) rotate(-15deg);
+  }
+}
+@keyframes scatter4 {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate(150px, 100px) rotate(20deg);
+  }
+}
+@keyframes scatter5 {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate(-100px, -50px) rotate(-10deg);
+  }
+}
+@keyframes scatter6 {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate(200px, -50px) rotate(25deg);
+  }
+}
+
+#photo1 {
+  animation: scatter1 1.5s ease-out forwards;
+}
+
+#photo2 {
+  animation: scatter2 1.5s ease-out forwards;
+}
+#photo3 {
+  animation: scatter3 1.5s ease-out forwards;
+}
+#photo4 {
+  animation: scatter4 1.5s ease-out forwards;
+}
+#photo5 {
+  animation: scatter5 1.5s ease-out forwards;
+}
+#photo6 {
+  animation: scatter6 1.5s ease-out forwards;
+}
+/* -------------Zbieranie--------------- */
+@keyframes gather1 {
+  0% {
+    transform: translate(-200px, -100px) rotate(-25deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+@keyframes gather2 {
+  0% {
+    transform: translate(100px, -150px) rotate(30deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+@keyframes gather3 {
+  0% {
+    transform: translate(-150px, 50px) rotate(-15deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+@keyframes gather4 {
+  0% {
+    transform: translate(150px, 100px) rotate(20deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+@keyframes gather5 {
+  0% {
+    transform: translate(-100px, -50px) rotate(-10deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+@keyframes gather6 {
+  0% {
+    transform: translate(200px, -50px) rotate(25deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+.album.gather #photo1 {
+  animation: gather1 1.5s ease-in forwards;
+}
+.album.gather #photo2 {
+  animation: gather2 1.5s ease-in forwards;
+}
+.album.gather #photo3 {
+  animation: gather3 1.5s ease-in forwards;
+}
+.album.gather #photo4 {
+  animation: gather4 1.5s ease-in forwards;
+}
+.album.gather #photo5 {
+  animation: gather5 1.5s ease-in forwards;
+}
+.album.gather #photo6 {
+  animation: gather6 1.5s ease-in forwards;
+}

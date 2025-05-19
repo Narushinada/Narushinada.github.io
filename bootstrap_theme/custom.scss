@@ -72,8 +72,7 @@ $tritanopia-theme-colors: (
   "my-PizzaCrustBeige":#EFB9B5,// Secondary buttons, hover backgrounds, or decorative accents.
 );
 
-
-
+// $border-radius: .1rem;
 /* Import web fonts - Must come before any CSS rules. Refresh the Page view after making changes to import statements. */
 // @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Playfair+Display:wght@400;700;900&display=swap');
 // $font-family-sans-serif: 'Lato', sans-serif;
@@ -91,191 +90,166 @@ $tritanopia-theme-colors: (
 // Example: add custom colors to theme colors
 // $theme-colors: map-merge($theme-colors, $custom-theme-colors);
 // :root {
-//   /* domyślne wartości bootstrapowe */
-//   --bs-primary: #D72638;
-//   --bs-secondary: #E2C290;
-//   --bs-success: #3F784C;
-//   --bs-info: #FFF8E7;
-//   --bs-light: #FFF8E7;
-//   --bs-dark: #2E2E2E;
+// /* domyślne wartości bootstrapowe */
+// --bs-primary: #D72638;
+// --bs-secondary: #E2C290;
+// --bs-success: #3F784C;
+// --bs-info: #FFF8E7;
+// --bs-light: #FFF8E7;
+// --bs-dark: #2E2E2E;
 // }
 .theme-default {
-  /* Główne kolory */
-  --bs-primary: #D72638;
-  --bs-primary-rgb: 215, 38, 56;
-  --bs-primary-text-emphasis: #891922;
-  --bs-primary-bg-subtle: #f8d2d6;
-  --bs-primary-border-subtle: #f0a6ad;
+    /* Główne kolory */
+    --bs-primary: #D72638;
+    --bs-primary-rgb: 215, 38, 56;
+    --bs-primary-text-emphasis: #891922;
+    --bs-primary-bg-subtle: #f8d2d6;
+    --bs-primary-border-subtle: #f0a6ad;
+    --bs-secondary: #E2C290;
+    --bs-secondary-rgb: 226, 194, 144;
+    --bs-secondary-text-emphasis: #7f653a;
+    --bs-secondary-bg-subtle: #fdf4e2;
+    --bs-secondary-border-subtle: #f4e1ba;
+    --bs-success: #3F784C;
+    --bs-success-rgb: 63, 120, 76;
+    --bs-success-text-emphasis: #2a5534;
+    --bs-success-bg-subtle: #e2f0e6;
+    --bs-success-border-subtle: #b3d8bf;
+    --bs-info: #FFF8E7;
+    --bs-info-rgb: 255, 248, 231;
+    --bs-info-text-emphasis: #a69e84;
+    --bs-info-bg-subtle: #fffdf7;
+    --bs-info-border-subtle: #fef4d6;
+    --bs-light: #FFF8E7;
+    --bs-light-rgb: 255, 248, 231;
+    --bs-light-text-emphasis: #a69e84;
+    --bs-light-bg-subtle: #fffdf7;
+    --bs-light-border-subtle: #fef4d6;
+    --bs-dark: #2E2E2E;
+    --bs-dark-rgb: 46, 46, 46;
+    --bs-dark-text-emphasis: #1a1a1a;
+    --bs-dark-bg-subtle: #e3e3e3;
+    --bs-dark-border-subtle: #bfbfbf;
 
-  --bs-secondary: #E2C290;
-  --bs-secondary-rgb: 226, 194, 144;
-  --bs-secondary-text-emphasis: #7f653a;
-  --bs-secondary-bg-subtle: #fdf4e2;
-  --bs-secondary-border-subtle: #f4e1ba;
+    /* Tło i tekst całej strony */
+    --bs-body-bg: #FFF8E7;
+    --bs-body-color: #2E2E2E;
 
-  --bs-success: #3F784C;
-  --bs-success-rgb: 63, 120, 76;
-  --bs-success-text-emphasis: #2a5534;
-  --bs-success-bg-subtle: #e2f0e6;
-  --bs-success-border-subtle: #b3d8bf;
-
-  --bs-info: #FFF8E7;
-  --bs-info-rgb: 255, 248, 231;
-  --bs-info-text-emphasis: #a69e84;
-  --bs-info-bg-subtle: #fffdf7;
-  --bs-info-border-subtle: #fef4d6;
-
-  --bs-light: #FFF8E7;
-  --bs-light-rgb: 255, 248, 231;
-  --bs-light-text-emphasis: #a69e84;
-  --bs-light-bg-subtle: #fffdf7;
-  --bs-light-border-subtle: #fef4d6;
-
-  --bs-dark: #2E2E2E;
-  --bs-dark-rgb: 46, 46, 46;
-  --bs-dark-text-emphasis: #1a1a1a;
-  --bs-dark-bg-subtle: #e3e3e3;
-  --bs-dark-border-subtle: #bfbfbf;
-
-  /* Tło i tekst całej strony */
-  --bs-body-bg: #FFF8E7;
-  --bs-body-color: #2E2E2E;
-
-  /* Kolor linków */
-  --bs-link-color: var(--bs-primary);
-  --bs-link-hover-color: #aa1c2a;
+    /* Kolor linków */
+    --bs-link-color: var(--bs-primary);
+    --bs-link-hover-color: #aa1c2a;
 }
 
 .theme-deuteranopia {
-  --bs-primary: #8B7D31;
-  --bs-primary-rgb: 139, 125, 49;
-  --bs-primary-text-emphasis: #594f1f;
-  --bs-primary-bg-subtle: #f1ecda;
-  --bs-primary-border-subtle: #d4c87e;
-
-  --bs-secondary: #D7CA91;
-  --bs-secondary-rgb: 215, 202, 145;
-  --bs-secondary-text-emphasis: #786f3c;
-  --bs-secondary-bg-subtle: #f9f5e4;
-  --bs-secondary-border-subtle: #ede0a6;
-
-  --bs-success: #706A4F;
-  --bs-success-rgb: 112, 106, 79;
-  --bs-success-text-emphasis: #4b4733;
-  --bs-success-bg-subtle: #e4e2d9;
-  --bs-success-border-subtle: #c0bba5;
-
-  --bs-info: #FFF8E7;
-  --bs-info-rgb: 255, 248, 231;
-  --bs-info-text-emphasis: #aaa28a;
-  --bs-info-bg-subtle: #fffdf7;
-  --bs-info-border-subtle: #fef4d6;
-
-  --bs-light: #FFF8E7;
-  --bs-light-rgb: 255, 248, 231;
-  --bs-light-text-emphasis: #aaa28a;
-  --bs-light-bg-subtle: #fffdf7;
-  --bs-light-border-subtle: #fef4d6;
-
-  --bs-dark: #2E2E2E;
-  --bs-dark-rgb: 46, 46, 46;
-  --bs-dark-text-emphasis: #1a1a1a;
-  --bs-dark-bg-subtle: #e3e3e3;
-  --bs-dark-border-subtle: #bfbfbf;
-
-  --bs-body-bg: #FFF8E7;
-  --bs-body-color: #2E2E2E;
-  --bs-link-color: var(--bs-primary);
-  --bs-link-hover-color: #665e22;
+    --bs-primary: #8B7D31;
+    --bs-primary-rgb: 139, 125, 49;
+    --bs-primary-text-emphasis: #594f1f;
+    --bs-primary-bg-subtle: #f1ecda;
+    --bs-primary-border-subtle: #d4c87e;
+    --bs-secondary: #D7CA91;
+    --bs-secondary-rgb: 215, 202, 145;
+    --bs-secondary-text-emphasis: #786f3c;
+    --bs-secondary-bg-subtle: #f9f5e4;
+    --bs-secondary-border-subtle: #ede0a6;
+    --bs-success: #706A4F;
+    --bs-success-rgb: 112, 106, 79;
+    --bs-success-text-emphasis: #4b4733;
+    --bs-success-bg-subtle: #e4e2d9;
+    --bs-success-border-subtle: #c0bba5;
+    --bs-info: #FFF8E7;
+    --bs-info-rgb: 255, 248, 231;
+    --bs-info-text-emphasis: #aaa28a;
+    --bs-info-bg-subtle: #fffdf7;
+    --bs-info-border-subtle: #fef4d6;
+    --bs-light: #FFF8E7;
+    --bs-light-rgb: 255, 248, 231;
+    --bs-light-text-emphasis: #aaa28a;
+    --bs-light-bg-subtle: #fffdf7;
+    --bs-light-border-subtle: #fef4d6;
+    --bs-dark: #2E2E2E;
+    --bs-dark-rgb: 46, 46, 46;
+    --bs-dark-text-emphasis: #1a1a1a;
+    --bs-dark-bg-subtle: #e3e3e3;
+    --bs-dark-border-subtle: #bfbfbf;
+    --bs-body-bg: #FFF8E7;
+    --bs-body-color: #2E2E2E;
+    --bs-link-color: var(--bs-primary);
+    --bs-link-hover-color: #665e22;
 }
 
 .theme-protanopia {
-  --bs-primary: #605837;
-  --bs-primary-rgb: 96, 88, 55;
-  --bs-primary-text-emphasis: #3e3824;
-  --bs-primary-bg-subtle: #e7e4db;
-  --bs-primary-border-subtle: #cfc295;
-
-  --bs-secondary: #CFC28D;
-  --bs-secondary-rgb: 207, 194, 141;
-  --bs-secondary-text-emphasis: #6c6437;
-  --bs-secondary-bg-subtle: #f8f5e6;
-  --bs-secondary-border-subtle: #e3d7a1;
-
-  --bs-success: #797049;
-  --bs-success-rgb: 121, 112, 73;
-  --bs-success-text-emphasis: #524c32;
-  --bs-success-bg-subtle: #e7e4d9;
-  --bs-success-border-subtle: #c9c3a5;
-
-  --bs-info: #FFF8E7;
-  --bs-info-rgb: 255, 248, 231;
-  --bs-info-text-emphasis: #aaa28a;
-  --bs-info-bg-subtle: #fffdf7;
-  --bs-info-border-subtle: #fef4d6;
-
-  --bs-light: #FFF8E7;
-  --bs-light-rgb: 255, 248, 231;
-  --bs-light-text-emphasis: #aaa28a;
-  --bs-light-bg-subtle: #fffdf7;
-  --bs-light-border-subtle: #fef4d6;
-
-  --bs-dark: #2E2E2E;
-  --bs-dark-rgb: 46, 46, 46;
-  --bs-dark-text-emphasis: #1a1a1a;
-  --bs-dark-bg-subtle: #e3e3e3;
-  --bs-dark-border-subtle: #bfbfbf;
-
-  --bs-body-bg: #FFF8E7;
-  --bs-body-color: #2E2E2E;
-  --bs-link-color: var(--bs-primary);
-  --bs-link-hover-color: #49422a;
+    --bs-primary: #605837;
+    --bs-primary-rgb: 96, 88, 55;
+    --bs-primary-text-emphasis: #3e3824;
+    --bs-primary-bg-subtle: #e7e4db;
+    --bs-primary-border-subtle: #cfc295;
+    --bs-secondary: #CFC28D;
+    --bs-secondary-rgb: 207, 194, 141;
+    --bs-secondary-text-emphasis: #6c6437;
+    --bs-secondary-bg-subtle: #f8f5e6;
+    --bs-secondary-border-subtle: #e3d7a1;
+    --bs-success: #797049;
+    --bs-success-rgb: 121, 112, 73;
+    --bs-success-text-emphasis: #524c32;
+    --bs-success-bg-subtle: #e7e4d9;
+    --bs-success-border-subtle: #c9c3a5;
+    --bs-info: #FFF8E7;
+    --bs-info-rgb: 255, 248, 231;
+    --bs-info-text-emphasis: #aaa28a;
+    --bs-info-bg-subtle: #fffdf7;
+    --bs-info-border-subtle: #fef4d6;
+    --bs-light: #FFF8E7;
+    --bs-light-rgb: 255, 248, 231;
+    --bs-light-text-emphasis: #aaa28a;
+    --bs-light-bg-subtle: #fffdf7;
+    --bs-light-border-subtle: #fef4d6;
+    --bs-dark: #2E2E2E;
+    --bs-dark-rgb: 46, 46, 46;
+    --bs-dark-text-emphasis: #1a1a1a;
+    --bs-dark-bg-subtle: #e3e3e3;
+    --bs-dark-border-subtle: #bfbfbf;
+    --bs-body-bg: #FFF8E7;
+    --bs-body-color: #2E2E2E;
+    --bs-link-color: var(--bs-primary);
+    --bs-link-hover-color: #49422a;
 }
 
 .theme-tritanopia {
-  --bs-primary: #ED002F;
-  --bs-primary-rgb: 237, 0, 47;
-  --bs-primary-text-emphasis: #98001f;
-  --bs-primary-bg-subtle: #fde3e8;
-  --bs-primary-border-subtle: #f7acbb;
-
-  --bs-secondary: #EFB9B5;
-  --bs-secondary-rgb: 239, 185, 181;
-  --bs-secondary-text-emphasis: #a47774;
-  --bs-secondary-bg-subtle: #fdf1f0;
-  --bs-secondary-border-subtle: #e7c8c6;
-
-  --bs-success: #35766D;
-  --bs-success-rgb: 53, 118, 109;
-  --bs-success-text-emphasis: #235048;
-  --bs-success-bg-subtle: #d7ebe9;
-  --bs-success-border-subtle: #a9d3cf;
-
-  --bs-info: #FFF5F3;
-  --bs-info-rgb: 255, 245, 243;
-  --bs-info-text-emphasis: #a39491;
-  --bs-info-bg-subtle: #fffdfc;
-  --bs-info-border-subtle: #fceae6;
-
-  --bs-light: #FFF5F3;
-  --bs-light-rgb: 255, 245, 243;
-  --bs-light-text-emphasis: #a39491;
-  --bs-light-bg-subtle: #fffdfc;
-  --bs-light-border-subtle: #fceae6;
-
-  --bs-dark: #2E2E2E;
-  --bs-dark-rgb: 46, 46, 46;
-  --bs-dark-text-emphasis: #1a1a1a;
-  --bs-dark-bg-subtle: #e3e3e3;
-  --bs-dark-border-subtle: #bfbfbf;
-
-  --bs-body-bg: #FFF5F3;
-  --bs-body-color: #2E2E2E;
-  --bs-link-color: var(--bs-primary);
-  --bs-link-hover-color: #b00025;
+    --bs-primary: #ED002F;
+    --bs-primary-rgb: 237, 0, 47;
+    --bs-primary-text-emphasis: #98001f;
+    --bs-primary-bg-subtle: #fde3e8;
+    --bs-primary-border-subtle: #f7acbb;
+    --bs-secondary: #EFB9B5;
+    --bs-secondary-rgb: 239, 185, 181;
+    --bs-secondary-text-emphasis: #a47774;
+    --bs-secondary-bg-subtle: #fdf1f0;
+    --bs-secondary-border-subtle: #e7c8c6;
+    --bs-success: #35766D;
+    --bs-success-rgb: 53, 118, 109;
+    --bs-success-text-emphasis: #235048;
+    --bs-success-bg-subtle: #d7ebe9;
+    --bs-success-border-subtle: #a9d3cf;
+    --bs-info: #FFF5F3;
+    --bs-info-rgb: 255, 245, 243;
+    --bs-info-text-emphasis: #a39491;
+    --bs-info-bg-subtle: #fffdfc;
+    --bs-info-border-subtle: #fceae6;
+    --bs-light: #FFF5F3;
+    --bs-light-rgb: 255, 245, 243;
+    --bs-light-text-emphasis: #a39491;
+    --bs-light-bg-subtle: #fffdfc;
+    --bs-light-border-subtle: #fceae6;
+    --bs-dark: #2E2E2E;
+    --bs-dark-rgb: 46, 46, 46;
+    --bs-dark-text-emphasis: #1a1a1a;
+    --bs-dark-bg-subtle: #e3e3e3;
+    --bs-dark-border-subtle: #bfbfbf;
+    --bs-body-bg: #FFF5F3;
+    --bs-body-color: #2E2E2E;
+    --bs-link-color: var(--bs-primary);
+    --bs-link-hover-color: #b00025;
 }
-
-
 
 // $variable-prefix: bs-;
 // $prefix: $variable-prefix;
@@ -357,71 +331,70 @@ $tritanopia-theme-colors: (
 @import "bootstrap/utilities/api";
 
 /* Custom CSS rules come here */
-
 .btn-primary {
-  --bs-btn-color: var(--bs-light, #fff);
-  --bs-btn-bg: var(--bs-primary);
-  --bs-btn-border-color: var(--bs-primary);
-  --bs-btn-hover-bg: color-mix(in srgb, var(--bs-primary) 85%, black);
-  --bs-btn-hover-border-color: color-mix(in srgb, var(--bs-primary) 85%, black);
-  --bs-btn-focus-shadow-rgb: var(--bs-primary-rgb);
-  --bs-btn-active-bg: color-mix(in srgb, var(--bs-primary) 70%, black);
-  --bs-btn-active-border-color: color-mix(in srgb, var(--bs-primary) 70%, black);
+    --bs-btn-color: var(--bs-light, #fff);
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-bg: color-mix(in srgb, var(--bs-primary) 85%, black);
+    --bs-btn-hover-border-color: color-mix(in srgb, var(--bs-primary) 85%, black);
+    --bs-btn-focus-shadow-rgb: var(--bs-primary-rgb);
+    --bs-btn-active-bg: color-mix(in srgb, var(--bs-primary) 70%, black);
+    --bs-btn-active-border-color: color-mix(in srgb, var(--bs-primary) 70%, black);
 }
 
 .btn-secondary {
-  --bs-btn-color: var(--bs-body-color);
-  --bs-btn-bg: var(--bs-secondary);
-  --bs-btn-border-color: var(--bs-secondary);
-  --bs-btn-hover-bg: color-mix(in srgb, var(--bs-secondary) 85%, black);
-  --bs-btn-hover-border-color: color-mix(in srgb, var(--bs-secondary) 85%, black);
-  --bs-btn-focus-shadow-rgb: var(--bs-secondary-rgb);
-  --bs-btn-active-bg: color-mix(in srgb, var(--bs-secondary) 70%, black);
-  --bs-btn-active-border-color: color-mix(in srgb, var(--bs-secondary) 70%, black);
+    --bs-btn-color: var(--bs-body-color);
+    --bs-btn-bg: var(--bs-secondary);
+    --bs-btn-border-color: var(--bs-secondary);
+    --bs-btn-hover-bg: color-mix(in srgb, var(--bs-secondary) 85%, black);
+    --bs-btn-hover-border-color: color-mix(in srgb, var(--bs-secondary) 85%, black);
+    --bs-btn-focus-shadow-rgb: var(--bs-secondary-rgb);
+    --bs-btn-active-bg: color-mix(in srgb, var(--bs-secondary) 70%, black);
+    --bs-btn-active-border-color: color-mix(in srgb, var(--bs-secondary) 70%, black);
 }
 
 .btn-success {
-  --bs-btn-color: var(--bs-light, #fff);
-  --bs-btn-bg: var(--bs-success);
-  --bs-btn-border-color: var(--bs-success);
-  --bs-btn-hover-bg: color-mix(in srgb, var(--bs-success) 85%, black);
-  --bs-btn-hover-border-color: color-mix(in srgb, var(--bs-success) 85%, black);
-  --bs-btn-focus-shadow-rgb: var(--bs-success-rgb);
-  --bs-btn-active-bg: color-mix(in srgb, var(--bs-success) 70%, black);
-  --bs-btn-active-border-color: color-mix(in srgb, var(--bs-success) 70%, black);
+    --bs-btn-color: var(--bs-light, #fff);
+    --bs-btn-bg: var(--bs-success);
+    --bs-btn-border-color: var(--bs-success);
+    --bs-btn-hover-bg: color-mix(in srgb, var(--bs-success) 85%, black);
+    --bs-btn-hover-border-color: color-mix(in srgb, var(--bs-success) 85%, black);
+    --bs-btn-focus-shadow-rgb: var(--bs-success-rgb);
+    --bs-btn-active-bg: color-mix(in srgb, var(--bs-success) 70%, black);
+    --bs-btn-active-border-color: color-mix(in srgb, var(--bs-success) 70%, black);
 }
 
 .btn-info {
-  --bs-btn-color: var(--bs-dark, #000);
-  --bs-btn-bg: var(--bs-info);
-  --bs-btn-border-color: var(--bs-info);
-  --bs-btn-hover-bg: color-mix(in srgb, var(--bs-info) 85%, black);
-  --bs-btn-hover-border-color: color-mix(in srgb, var(--bs-info) 85%, black);
-  --bs-btn-focus-shadow-rgb: var(--bs-info-rgb);
-  --bs-btn-active-bg: color-mix(in srgb, var(--bs-info) 70%, black);
-  --bs-btn-active-border-color: color-mix(in srgb, var(--bs-info) 70%, black);
+    --bs-btn-color: var(--bs-dark, #000);
+    --bs-btn-bg: var(--bs-info);
+    --bs-btn-border-color: var(--bs-info);
+    --bs-btn-hover-bg: color-mix(in srgb, var(--bs-info) 85%, black);
+    --bs-btn-hover-border-color: color-mix(in srgb, var(--bs-info) 85%, black);
+    --bs-btn-focus-shadow-rgb: var(--bs-info-rgb);
+    --bs-btn-active-bg: color-mix(in srgb, var(--bs-info) 70%, black);
+    --bs-btn-active-border-color: color-mix(in srgb, var(--bs-info) 70%, black);
 }
 
 .btn-light {
-  --bs-btn-color: var(--bs-dark, #000);
-  --bs-btn-bg: var(--bs-light);
-  --bs-btn-border-color: var(--bs-light);
-  --bs-btn-hover-bg: color-mix(in srgb, var(--bs-light) 85%, black);
-  --bs-btn-hover-border-color: color-mix(in srgb, var(--bs-light) 85%, black);
-  --bs-btn-focus-shadow-rgb: var(--bs-light-rgb);
-  --bs-btn-active-bg: color-mix(in srgb, var(--bs-light) 70%, black);
-  --bs-btn-active-border-color: color-mix(in srgb, var(--bs-light) 70%, black);
+    --bs-btn-color: var(--bs-dark, #000);
+    --bs-btn-bg: var(--bs-light);
+    --bs-btn-border-color: var(--bs-light);
+    --bs-btn-hover-bg: color-mix(in srgb, var(--bs-light) 85%, black);
+    --bs-btn-hover-border-color: color-mix(in srgb, var(--bs-light) 85%, black);
+    --bs-btn-focus-shadow-rgb: var(--bs-light-rgb);
+    --bs-btn-active-bg: color-mix(in srgb, var(--bs-light) 70%, black);
+    --bs-btn-active-border-color: color-mix(in srgb, var(--bs-light) 70%, black);
 }
 
 .btn-dark {
-  --bs-btn-color: var(--bs-light, #fff);
-  --bs-btn-bg: var(--bs-dark);
-  --bs-btn-border-color: var(--bs-dark);
-  --bs-btn-hover-bg: color-mix(in srgb, var(--bs-dark) 85%, white);
-  --bs-btn-hover-border-color: color-mix(in srgb, var(--bs-dark) 85%, white);
-  --bs-btn-focus-shadow-rgb: var(--bs-dark-rgb);
-  --bs-btn-active-bg: color-mix(in srgb, var(--bs-dark) 70%, white);
-  --bs-btn-active-border-color: color-mix(in srgb, var(--bs-dark) 70%, white);
+    --bs-btn-color: var(--bs-light, #fff);
+    --bs-btn-bg: var(--bs-dark);
+    --bs-btn-border-color: var(--bs-dark);
+    --bs-btn-hover-bg: color-mix(in srgb, var(--bs-dark) 85%, white);
+    --bs-btn-hover-border-color: color-mix(in srgb, var(--bs-dark) 85%, white);
+    --bs-btn-focus-shadow-rgb: var(--bs-dark-rgb);
+    --bs-btn-active-bg: color-mix(in srgb, var(--bs-dark) 70%, white);
+    --bs-btn-active-border-color: color-mix(in srgb, var(--bs-dark) 70%, white);
 }
 
 /* Pinegrow generated Additional Rules Begin */

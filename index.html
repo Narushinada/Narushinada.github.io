@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html lang="en" data-pgc-set-master>
-  <head>
+  <head data-pgc-edit="head">
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-    <meta name="description" content=""/>
-    <meta name="author" content=""/>
-    <title>Mathew's Pizza</title>
+    <!-- -----Meta----- -->
+    <meta name="description" content="Zamów pyszną pizzę z dostawą w Częstochowie! Pizzeria Matthew's – lokalne składniki, szybka realizacja i smak, który pokochasz."/>
+    <meta name="author" content="Mateusz Terka"/>
+    <title>Pyszna pizza z pieca – dostawa i odbiór | Pizzeria Matthew's</title>
+    <meta name="keywords" content="pizza Częstochowa, pizzeria Częstochowa, pizza na dowóz, pizza z pieca, Pizzeria Matthew's">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Pyszna pizza z pieca – dostawa i odbiór | Pizzeria Matthew's">
+    <meta property="og:description" content="Zamów pyszną pizzę z dostawą w Częstochowie! Pizzeria Matthew's – lokalne składniki, szybka realizacja i smak, który pokochasz.">
+    <meta property="og:type" content="website">
+    <!-- <meta property="og:url" content="https://www.twojadomena.pl/"> -->
+    <!-- <meta property="og:image" content="https://www.twojadomena.pl/images/og-image.jpg"> -->
     <!-- Bootstrap core CSS -->
     <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
     <!-- Bootstrap icons CSS -->
@@ -54,30 +62,42 @@
     </script></head>
   <body id="theme-default ">
     <div class="container mw-100">
+      <!-- ======================= -->
+      <!-- Image -->
+      <!-- ======================= -->
       <div class="row" data-pg-name="Image">
         <img src="https://images.unsplash.com/photo-1666079805650-88894bc6a46b?ixid=M3wyMDkyMnwwfDF8c2VhcmNofDI0OXx8cGl6emVyaWF8ZW58MHx8fHwxNzQ1MzE4MTA3fDA&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=1980&h=600&fit=crop" sizes="83vw,
 (min-width: 576px) 96vw" class="p-0"/>
       </div>
+      <!-- ======================= -->
+      <!-- Navbar -->
+      <!-- ======================= -->
       <div class="row" data-pg-name="Navbar">
         <nav class="border-3 border-bottom border-secondary border-top navbar navbar-expand-lg"> 
-                    <div class="container-fluid"> <a class="navbar-brand" href="#">Matthew's Pizza</a> 
+                    <div class="container-fluid"> <a class="navbar-brand" href="#">Pizzeria Matthew's</a> 
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler23" aria-controls="" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>                         
 
                         <div class="collapse navbar-collapse" id="navbarToggler23"> 
                                                                                       
-                        <form class="d-flex ms-auto">                                                                <button class="btn btn-primary fs-5 fw-semibold text-light" type="button">Order</button>                            </form></div>                         
+                        <form class="d-flex ms-auto">                                                                <button class="btn btn-primary fs-5 fw-semibold text-light" type="button">Zamów</button>                            </form></div>                         
                     </div>                     
                 </nav>
       </div>
+      <!-- ======================= -->
+      <!-- Main -->
+      <!-- ======================= -->
       <div class="row" data-pg-name="Main">
+        <!-- ======================= -->
+        <!-- Left -->
+        <!-- ======================= -->
         <div class="col-lg-2 m-1" data-pg-name="LSidebar">
           <div class="border border-2 border-secondary mb-1 rounded rounded-1 row" data-pg-name="NavBar">
             <div class="p-1">
               <ul class="list-unstyled ps-0">
                 <li class="mb-1">
-                  <button class="align-items-center btn btn-toggle collapsed fw-semibold module-link text-start w-100" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+                  <button class="align-items-center btn btn-toggle collapsed fw-semibold module-header text-start w-100" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
                     Home<i class="bi bi-arrow-down-short"></i>
                   </button>
                   <div class="collapse show" id="home-collapse">
@@ -86,24 +106,24 @@
                         <a class="fs-6 module-link nav-link" href="/index.html">Home</a>
                       </li>
                       <li class="nav-item">
-                        <a class="fs-6 module-link nav-link" href="/pages/Animations.html">Animations</a>
+                        <a class="disabled fs-6 module-link nav-link" href="/pages/Animations.html">NaN</a>
                       </li>
                       <li class="nav-item">
-                        <a class="fs-6 module-link nav-link" href="#">Something3</a>
+                        <a class="disabled fs-6 module-link nav-link" href="#">NaN</a>
                       </li>
                       <li class="nav-item">
-                        <a class="fs-6 module-link nav-link" href="#">Test</a>
+                        <a class="disabled fs-6 module-link nav-link" href="#">NaN</a>
                       </li>
                     </ul>
                   </div>
                 </li>
                 <li class="mb-1">
-                  <a href=""><button class="align-items-center btn fw-semibold module-link text-start w-100" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+                  <a href=""><button class="align-items-center btn fw-semibold module-header text-start w-100" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false" disabled="disabled">
                       Menu
                     </button></a>
                 </li>
                 <li class="mb-1">
-                  <button class="align-items-center btn btn-toggle collapsed fw-semibold module-link text-start w-100" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+                  <button class="align-items-center btn btn-toggle collapsed fw-semibold module-header text-start w-100" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
                     Interaktywna grafika laby<i class="bi bi-arrow-down-short"></i>
                   </button>
                   <div class="collapse" id="orders-collapse">
@@ -112,13 +132,15 @@
                         <a href="pages/Lab02.html" class="fs-6 module-link nav-link">Lab02 - proste animacje</a>
                       </li>
                       <li>
-                        <a href="#" class="fs-6 module-link nav-link">Processed</a>
+                        <a href="pages/Lab03.html" class="fs-6 module-link nav-link">Lab03 - zaawansowane animacje</a>
                       </li>
                       <li>
-                        <a href="#" class="fs-6 module-link nav-link">Shipped</a>
+                        <a href="pages/Lab04.html" class="fs-6 module-link nav-link">Lab04 - JQuary 1</a>
                       </li>
                       <li>
-                        <a href="#" class="fs-6 module-link nav-link">Returned</a>
+                        <a href="#" class="fs-6 module-link nav-link">Lab05 - jQuery 2</a>
+                      </li><li>
+                        <a href="#" class="fs-6 module-link nav-link">Lab09 - SVG</a>
                       </li>
                     </ul>
                   </div>
@@ -127,7 +149,10 @@
             </div>
           </div>
         </div>
-        <div class="border border-2 border-secondary col-lg m-1 rounded rounded-1" data-pg-name="MainContent" data-pgc-edit="MainConentEdit">
+        <!-- ======================= -->
+        <!-- MainContent -->
+        <!-- ======================= -->
+        <div class="border border-2 border-secondary col-lg m-1 p-3 rounded rounded-1" data-pg-name="MainContent" data-pgc-edit="MainConentEdit">
           <div id="page_content"> 
                         <div class="article"> 
                             <div class="article_title h3">Lorem ipsum dolor sit amet</div>                             
@@ -196,6 +221,9 @@
                     </div>
           
         </div>
+        <!-- ======================= -->
+        <!-- Right -->
+        <!-- ======================= -->
         <div class="col-lg-2 m-1" data-pg-name="RSidebar">
           <div class="bg-my-PizzaCrustBeige border border-2 border-secondary rounded rounded-1 row" data-pg-name="Modules">
             <div class="p-1">
@@ -210,6 +238,9 @@
           </div>
         </div>
       </div>
+      <!-- ======================= -->
+      <!-- Footer -->
+      <!-- ======================= -->
       <div class="bg-dark row text-light" data-pg-name="Footer">
         <footer class="bg-my-CharcoalGrey text-white">
           <div class="container">
@@ -250,7 +281,7 @@
             </div> -->
             <div class="pb-3 pt-3 text-center">
               <hr class="mt-0"/>
-              <p class="mb-0">Copyright © 2020 Company Name</p>
+              <p class="mb-0">Copyright © 2025 Matthew's Pizza</p>
             </div>
           </div>
         </footer>
@@ -261,6 +292,8 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="assets/js/popper.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
-  <script src="pgia/lib/pgia.js"></script>
-  <script src="/js/Interaktywna/color-accesibility.js"></script></body>
+  <script src="pgia/lib/pgia.js"></script><div data-pgc-edit="JsScripts">
+            <script src="/js/Interaktywna/color-accesibility.js"></script>
+        </div>
+  </body>
 </html>
