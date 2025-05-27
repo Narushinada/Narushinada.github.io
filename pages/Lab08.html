@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Arkanoid</title>
+    <style>canvas { border: 1px solid black; display: block; margin: auto; } #instructions ul { padding-left: 20px; } #instructions li::marker { color: #333; }</style>
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <div>
+      <a href="../index.html" style="padding: 1rem">Back</a>
+    </div>
+    <div id="menu" style="text-align: center; margin: 20px">
+      <h1>Arkanoid</h1>
+      <label>
+        Poziom trudności:
+        <select id="difficulty">
+          <option value="easy">Łatwy</option>
+          <option value="medium" selected>Średni</option>
+          <option value="hard">Trudny</option>
+          <option value="extreme">Ekstremalny</option>
+        </select>
+      </label>
+      <br/><br/>
+      <label>
+        Wybierz mapę:
+        <select id="map">
+          <option value="classic">Klasyczna</option>
+          <option value="cross">Krzyż</option>
+          <option value="random">Losowa</option>
+          <option value="test">Test</option>
+        </select>
+      </label>
+      <br/><br/>
+      <button onclick="startGame()">Start</button>
+    </div>
+    <canvas id="AnimationCanvas" width="480" height="500"></canvas>
+    <div id="instructions" style="
+        max-width: 500px;
+        margin: 20px auto;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        line-height: 1.6;
+      ">
+      <h2 style="font-size: 18px; margin-bottom: 10px">🕹️ Sterowanie</h2>
+      <ul>
+        <li><b>← / →</b> – poruszanie paletką w lewo/prawo</li>
+        <li><b>SPACJA</b> – wystrzelenie piłki z paletki</li>
+        <li><b>SPACJA (po Game Over)</b> – restart gry</li>
+      </ul>
+
+      <h2 style="font-size: 18px; margin: 15px 0 10px">🎁 Bonusy</h2>
+      <ul>
+        <li>
+          <span style="color: deepskyblue"><b>💎 Diamond</b></span> – +50
+          punktów
+        </li>
+        <li>
+          <span style="color: orange"><b>↔ Expand</b></span> – poszerzenie
+          paletki na 20 sekund
+        </li>
+        <li>
+          <span style="color: red"><b>→← Shrink</b></span> – pomniejszenie
+          paletki na 5 sekund
+        </li>
+        <li>
+          <span style="color: mediumorchid"><b>⚪ MultiBall</b></span> – dodaje
+          nową piłkę
+        </li>
+        <li>
+          <span style="color: limegreen"><b>🧲 Sticky</b></span> – zatrzymuje
+          piłki na paletce, naciśnij <b>SPACJĘ</b>, by je wystrzelić
+        </li>
+      </ul>
+
+      <p style="margin-top: 10px">
+        <i>Bonusy mają paski czasu u dołu ekranu. Po zniszczeniu wszystkich
+          cegieł – wygrywasz!</i>
+      </p>
+    </div>
+
+    <script src="../js/Interaktywna/arkanoid.js"></script>
+  </body>
+</html>

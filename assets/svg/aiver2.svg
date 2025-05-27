@@ -1,0 +1,83 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Tło -->
+  <defs>
+    <radialGradient id="clockGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#e6f3fa"/>
+      <stop offset="100%" stop-color="#b3e0ff"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Tarcza zegara -->
+  <circle cx="150" cy="150" r="140" fill="url(#clockGradient)" stroke="black" stroke-width="3"/>
+
+  <!-- Znaczniki godzin -->
+  <g id="hour-marks">
+    <g transform="translate(150,150)">
+      <g stroke="black" stroke-width="2">
+        <line y1="-130" y2="-140" />
+        <g transform="rotate(30)">
+          <line y1="-130" y2="-140" />
+        </g>
+        <g transform="rotate(60)">
+          <line y1="-130" y2="-140" />
+        </g>
+        <g transform="rotate(90)">
+          <line y1="-130" y2="-140" />
+        </g>
+        <g transform="rotate(120)">
+          <line y1="-130" y2="-140" />
+        </g>
+        <g transform="rotate(150)">
+          <line y1="-130" y2="-140" />
+        </g>
+        <g transform="rotate(180)">
+          <line y1="-130" y2="-140" />
+        </g>
+        <g transform="rotate(210)">
+          <line y1="-130" y2="-140" />
+        </g>
+        <g transform="rotate(240)">
+          <line y1="-130" y2="-140" />
+        </g>
+        <g transform="rotate(270)">
+          <line y1="-130" y2="-140" />
+        </g>
+        <g transform="rotate(300)">
+          <line y1="-130" y2="-140" />
+        </g>
+        <g transform="rotate(330)">
+          <line y1="-130" y2="-140" />
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- Cyfry godzin z użyciem transform, obrócone do pionu -->
+  <g id="numbers" font-size="14" fill="darkred" font-family="serif" transform="translate(150,150)">
+    <text transform="rotate(0) translate(0,-120) rotate(0)" text-anchor="middle">12</text>
+    <text transform="rotate(30) translate(0,-120) rotate(-30)" text-anchor="middle">1</text>
+    <text transform="rotate(60) translate(0,-120) rotate(-60)" text-anchor="middle">2</text>
+    <text transform="rotate(90) translate(0,-120) rotate(-90)" text-anchor="middle">3</text>
+    <text transform="rotate(120) translate(0,-120) rotate(-120)" text-anchor="middle">4</text>
+    <text transform="rotate(150) translate(0,-120) rotate(-150)" text-anchor="middle">5</text>
+    <text transform="rotate(180) translate(0,-120) rotate(-180)" text-anchor="middle">6</text>
+    <text transform="rotate(210) translate(0,-120) rotate(-210)" text-anchor="middle">7</text>
+    <text transform="rotate(240) translate(0,-120) rotate(-240)" text-anchor="middle">8</text>
+    <text transform="rotate(270) translate(0,-120) rotate(-270)" text-anchor="middle">9</text>
+    <text transform="rotate(300) translate(0,-120) rotate(-300)" text-anchor="middle">10</text>
+    <text transform="rotate(330) translate(0,-120) rotate(-330)" text-anchor="middle">11</text>
+  </g>
+
+  <!-- Wskazówki zegara -->
+  <g id="hands" transform="translate(150,150)">
+    <!-- Godzinowa -->
+    <polygon points="0,0 -5,-5 -80,0 -5,5" fill="black"/>
+    <!-- Minutowa -->
+    <polygon points="0,0 -3,-6 0,-120 3,-6" fill="black"/>
+    <!-- Sekundowa -->
+    <line x1="0" y1="0" x2="40" y2="10" stroke="black" stroke-width="2"/>
+  </g>
+
+  <!-- Środek zegara -->
+  <circle cx="150" cy="150" r="4" fill="black" />
+</svg>

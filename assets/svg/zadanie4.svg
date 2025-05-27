@@ -1,37 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000">
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
     <defs>
-    <g id="group1" stroke="black" stroke-width="1" visibility="none"> 
+    <!-- Wskazówka -->
+    <g id="wskazowka" stroke="black" stroke-width="1" visibility="none"> 
         <path d="M 0 21 l 100 -20 l 50 20 z"
              fill="black" stroke="black" />
         <path d="M 0 21 l 100 20 l 50 -20 z"
              fill="white" stroke="black" />
     </g>
     <g id="group_r1" transform="translate(0, -21)">
-        <use xlink:href="#group1" />
+        <use xlink:href="#wskazowka" />
     </g>
-    <g id="group_r2" transform="translate(-150, -21)">
-        <use xlink:href="#group1" />
-    </g>
-    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" stop-color="white" stop-opacity=""/>
-        <stop offset="100%" stop-color="#097e9e" stop-opacity=""/>
-        
-    </linearGradient>
-    <g id="circle" fill="none" stroke="black" stroke-width="4">
-        <circle cx="150" cy="150" r="150" fill="url(#gradient1)"/>
-    </g>
-    <g id="numbers" transform="translate(-150,-21)">
-        <text x=""  y="" style="">12</text>
+    <g id="group_r2" transform="translate(-150, -21) ">
+        <use xlink:href="#wskazowka" />
+        <circle cx="0" cy="21" r="5" fill="white" stroke="black"/>
+        <circle cx="0" cy="21" r="2" fill="black"/>
     </g>
     </defs>
     
-    <!-- <use xlink:href="#group_r1" transform="translate(150,150) rotate(45)"/>
-    <use xlink:href="#group_r1" transform="translate(150,150) rotate(90)"/> -->
-    <use xlink:href="#circle"/>
-    <use xlink:href="#numbers" transform="translate(160,160) rotate(0)"/>
-    <use xlink:href="#numbers" transform="translate(400,160) rotate(0)"/>
-    <text x="145"  y="15" style="" transform="" >12</text>
-<!--     
     <use xlink:href="#group_r2" transform="translate(150,150) rotate(0) scale(1)"/>
     <use xlink:href="#group_r2" transform="translate(150,150) rotate(45) scale(0.9)"/>
     <use xlink:href="#group_r2" transform="translate(150,150) rotate(90) scale(0.8)"/>
@@ -39,6 +24,6 @@
     <use xlink:href="#group_r2" transform="translate(150,150) rotate(180) scale(0.6)"/>
     <use xlink:href="#group_r2" transform="translate(150,150) rotate(225) scale(0.5)"/>
     <use xlink:href="#group_r2" transform="translate(150,150) rotate(270) scale(0.4)"/>
-    <use xlink:href="#group_r2" transform="translate(150,150) rotate(315) scale(0.3)"/> -->
+    <use xlink:href="#group_r2" transform="translate(150,150) rotate(315) scale(0.3)"/>
 
 </svg>

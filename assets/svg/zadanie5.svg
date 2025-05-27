@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+    <defs>
+    <!-- Wskazówka -->
+    <g id="wskazowka" stroke="black" stroke-width="1" visibility="none"> 
+        <path d="M 0 21 l 100 -20 l 50 20 z"
+             fill="black" stroke="black" />
+        <path d="M 0 21 l 100 20 l 50 -20 z"
+             fill="white" stroke="black" />
+    </g>
+     <!-- Znacznik minutowy -->
+    <line id="znak-minuty" x1="150" y1="10" x2="150" y2="15" stroke="black" stroke-width="1"/>
+    <!-- Znacznik godzinowy -->
+    <line id="znak-godziny" x1="150" y1="10" x2="150" y2="20" stroke="black" stroke-width="2"/>
+
+    <g id="group_r1" transform="translate(0, -21)">
+        <use xlink:href="#wskazowka" />
+    </g>
+    <g id="group_r2" transform="translate(-150, -21) ">
+        <use xlink:href="#wskazowka" />
+        <circle cx="0" cy="21" r="5" fill="white" stroke="black"/>
+        <circle cx="0" cy="21" r="2" fill="black"/>
+    </g>
+
+    <linearGradient id="tarcza" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="white" stop-opacity=""/>
+        <stop offset="100%" stop-color="#097e9e" stop-opacity=""/>
+    </linearGradient>
+    </defs>
+    
+    <!-- Tarcza zegara -->
+    <circle cx="150" cy="150" r="140" fill="url(#tarcza)" stroke="black" stroke-width="3"/>
+    <circle cx="150" cy="150" r="6" fill-opacity="0" stroke="black" stroke-width=".5"/>
+    
+    <!-- Znaczniki godzin i minut -->
+    <g>
+    <!-- co 6 stopni -->
+    <use href="#znak-godziny" transform="rotate(0,150,150)" />
+    <use href="#znak-minuty" transform="rotate(6,150,150)" />
+    <use href="#znak-minuty" transform="rotate(12,150,150)" />
+    <use href="#znak-minuty" transform="rotate(18,150,150)" />
+    <use href="#znak-minuty" transform="rotate(24,150,150)" />
+    <use href="#znak-godziny" transform="rotate(30,150,150)" />
+    <use href="#znak-minuty" transform="rotate(36,150,150)" />
+    <use href="#znak-minuty" transform="rotate(42,150,150)" />
+    <use href="#znak-minuty" transform="rotate(48,150,150)" />
+    <use href="#znak-minuty" transform="rotate(54,150,150)" />
+    <use href="#znak-godziny" transform="rotate(60,150,150)" />
+    <use href="#znak-minuty" transform="rotate(66,150,150)" />
+    <use href="#znak-minuty" transform="rotate(72,150,150)" />
+    <use href="#znak-minuty" transform="rotate(78,150,150)" />
+    <use href="#znak-minuty" transform="rotate(84,150,150)" />
+    <use href="#znak-godziny" transform="rotate(90,150,150)" />
+    <use href="#znak-minuty" transform="rotate(96,150,150)" />
+    <use href="#znak-minuty" transform="rotate(102,150,150)" />
+    <use href="#znak-minuty" transform="rotate(108,150,150)" />
+    <use href="#znak-minuty" transform="rotate(114,150,150)" />
+    <use href="#znak-godziny" transform="rotate(120,150,150)" />
+    <use href="#znak-minuty" transform="rotate(126,150,150)" />
+    <use href="#znak-minuty" transform="rotate(132,150,150)" />
+    <use href="#znak-minuty" transform="rotate(138,150,150)" />
+    <use href="#znak-minuty" transform="rotate(144,150,150)" />
+    <use href="#znak-godziny" transform="rotate(150,150,150)" />
+    <use href="#znak-minuty" transform="rotate(156,150,150)" />
+    <use href="#znak-minuty" transform="rotate(162,150,150)" />
+    <use href="#znak-minuty" transform="rotate(168,150,150)" />
+    <use href="#znak-minuty" transform="rotate(174,150,150)" />
+    <use href="#znak-godziny" transform="rotate(180,150,150)" />
+    <use href="#znak-minuty" transform="rotate(186,150,150)" />
+    <use href="#znak-minuty" transform="rotate(192,150,150)" />
+    <use href="#znak-minuty" transform="rotate(198,150,150)" />
+    <use href="#znak-minuty" transform="rotate(204,150,150)" />
+    <use href="#znak-godziny" transform="rotate(210,150,150)" />
+    <use href="#znak-minuty" transform="rotate(216,150,150)" />
+    <use href="#znak-minuty" transform="rotate(222,150,150)" />
+    <use href="#znak-minuty" transform="rotate(228,150,150)" />
+    <use href="#znak-minuty" transform="rotate(234,150,150)" />
+    <use href="#znak-godziny" transform="rotate(240,150,150)" />
+    <use href="#znak-minuty" transform="rotate(246,150,150)" />
+    <use href="#znak-minuty" transform="rotate(252,150,150)" />
+    <use href="#znak-minuty" transform="rotate(258,150,150)" />
+    <use href="#znak-minuty" transform="rotate(264,150,150)" />
+    <use href="#znak-godziny" transform="rotate(270,150,150)" />
+    <use href="#znak-minuty" transform="rotate(276,150,150)" />
+    <use href="#znak-minuty" transform="rotate(282,150,150)" />
+    <use href="#znak-minuty" transform="rotate(288,150,150)" />
+    <use href="#znak-minuty" transform="rotate(294,150,150)" />
+    <use href="#znak-godziny" transform="rotate(300,150,150)" />
+    <use href="#znak-minuty" transform="rotate(306,150,150)" />
+    <use href="#znak-minuty" transform="rotate(312,150,150)" />
+    <use href="#znak-minuty" transform="rotate(318,150,150)" />
+    <use href="#znak-minuty" transform="rotate(324,150,150)" />
+    <use href="#znak-godziny" transform="rotate(330,150,150)" />
+    <use href="#znak-minuty" transform="rotate(336,150,150)" />
+    <use href="#znak-minuty" transform="rotate(342,150,150)" />
+    <use href="#znak-minuty" transform="rotate(348,150,150)" />
+    <use href="#znak-minuty" transform="rotate(354,150,150)" />
+    </g>
+
+    <!-- Cyfry godzin z użyciem transform, obrócone do pionu -->
+    <g id="liczby" font-size="14" fill="darkred" font-family="serif" transform="translate(150,155)">
+        <text transform="rotate(0) translate(0,-120) rotate(0)" text-anchor="middle">12</text>
+        <text transform="rotate(30) translate(0,-120) rotate(-30)" text-anchor="middle">1</text>
+        <text transform="rotate(60) translate(0,-120) rotate(-60)" text-anchor="middle">2</text>
+        <text transform="rotate(90) translate(0,-120) rotate(-90)" text-anchor="middle">3</text>
+        <text transform="rotate(120) translate(0,-120) rotate(-120)" text-anchor="middle">4</text>
+        <text transform="rotate(150) translate(0,-120) rotate(-150)" text-anchor="middle">5</text>
+        <text transform="rotate(180) translate(0,-120) rotate(-180)" text-anchor="middle">6</text>
+        <text transform="rotate(210) translate(0,-120) rotate(-210)" text-anchor="middle">7</text>
+        <text transform="rotate(240) translate(0,-120) rotate(-240)" text-anchor="middle">8</text>
+        <text transform="rotate(270) translate(0,-120) rotate(-270)" text-anchor="middle">9</text>
+        <text transform="rotate(300) translate(0,-120) rotate(-300)" text-anchor="middle">10</text>
+        <text transform="rotate(330) translate(0,-120) rotate(-330)" text-anchor="middle">11</text>
+    </g>
+    
+    <!-- Wskazówki zegara -->
+    <use xlink:href="#group_r1" transform="translate(150,150) rotate(270) scale(0.7)"/>
+    <use xlink:href="#group_r1" transform="translate(150,150) rotate(180) scale(0.6)"/>
+    <use xlink:href="#group_r1" transform="translate(150,150) rotate(20) scale(0.4)"/>
+
+    <!-- Środek -->
+    <circle cx="150" cy="150" r="3" fill="white" stroke="black" stroke-width="2"/>
+    
+    <!-- Zadanie 4 -->
+    <!-- <use xlink:href="#group_r2" transform="translate(150,150) rotate(0) scale(1)"/> -->
+    <!-- <use xlink:href="#group_r2" transform="translate(150,150) rotate(45) scale(0.9)"/> -->
+    <!-- <use xlink:href="#group_r2" transform="translate(150,150) rotate(90) scale(0.8)"/> -->
+    <!-- <use xlink:href="#group_r2" transform="translate(150,150) rotate(135) scale(0.7)"/> -->
+    <!-- <use xlink:href="#group_r2" transform="translate(150,150) rotate(180) scale(0.6)"/> -->
+    <!-- <use xlink:href="#group_r2" transform="translate(150,150) rotate(225) scale(0.5)"/> -->
+    <!-- <use xlink:href="#group_r2" transform="translate(150,150) rotate(270) scale(0.4)"/> -->
+    <!-- <use xlink:href="#group_r2" transform="translate(150,150) rotate(315) scale(0.3)"/> -->
+
+</svg>
