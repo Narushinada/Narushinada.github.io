@@ -320,17 +320,22 @@
       <!-- Navbar -->
       <!-- ======================= -->
       <div class="row" data-pg-name="Navbar">
-        <nav class="border-3 border-bottom border-secondary border-top navbar navbar-expand-lg"> 
-                    <div class="container-fluid"> <a class="navbar-brand" href="#">Pizzeria Matthew's</a> 
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler23" aria-controls="" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="border-3 border-bottom border-secondary border-top navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Pizzeria Matthew's</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler23" aria-controls="" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
-            </button>                         
+            </button>
 
-                        <div class="collapse navbar-collapse" id="navbarToggler23"> 
-                                                                                      
-                        <form class="d-flex ms-auto">                                                                <button class="btn btn-primary fs-5 fw-semibold text-light" type="button">Zamów</button>                            </form></div>                         
-                    </div>                     
-                </nav>
+            <div class="collapse navbar-collapse" id="navbarToggler23">
+              <form class="d-flex ms-auto">
+                <button class="btn btn-primary fs-5 fw-semibold text-light" type="button">
+                  Zamów
+                </button>
+              </form>
+            </div>
+          </div>
+        </nav>
       </div>
       <!-- ======================= -->
       <!-- Main -->
@@ -364,16 +369,24 @@
                     </ul>
                   </div>
                 </li>
-                <li class="mb-1">
-                  <a href=""><button class="align-items-center btn fw-semibold module-header text-start w-100" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false" disabled="disabled">
+                <!-- <li class="mb-1">
+                  <a href=""
+                    ><button
+                      class="align-items-center btn fw-semibold module-header text-start w-100"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#dashboard-collapse"
+                      aria-expanded="false"
+                      disabled="disabled"
+                    >
                       Menu
-                    </button></a>
-                </li>
+                    </button></a
+                  >
+                </li> -->
                 <li class="mb-1">
                   <button class="align-items-center btn btn-toggle collapsed fw-semibold module-header text-start w-100" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
                     Interaktywna grafika laby<i class="bi bi-arrow-down-short"></i>
                   </button>
-                  <div class="collapse" id="orders-collapse">
+                  <div class="collapse show" id="orders-collapse">
                     <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                       <li>
                         <a href="Lab02.html" class="fs-6 module-link nav-link">Lab02 - proste animacje</a>
@@ -386,11 +399,11 @@
                       </li>
                       <li>
                         <a href="#" class="fs-6 module-link nav-link">Lab05 - jQuery 2</a>
-                      </li><li>
-                        <a href="Lab08.html" class="fs-6 module-link nav-link">Lab08 - Arkanoid</a>
-                      </li><li>
-                        <a href="#" class="fs-6 module-link nav-link">Lab09 - SVG</a>
                       </li>
+                      <li>
+                        <a href="Lab08.html" class="fs-6 module-link nav-link">Lab08 - Arkanoid</a>
+                      </li>
+                      
                     </ul>
                   </div>
                 </li>
@@ -612,7 +625,8 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="../assets/js/popper.min.js"></script>
     <script src="../bootstrap/js/bootstrap.min.js"></script>
-  <script src="../pgia/lib/pgia.js"></script><div data-pgc-field="JsScripts">
+    <script src="../pgia/lib/pgia.js"></script>
+    <div data-pgc-field="JsScripts">
       <script src="/js/Interaktywna/color-accesibility.js"></script>
     </div>
   </body>
