@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+Disallow: /_pginfo/
+Disallow: /.vscode/
+Disallow: /projectdb.pgml
+Disallow: /pinegrow.json
+
+# Allow Google Images to index images
+User-agent: Googlebot-Image
+Allow: /assets/
+Allow: /screenshots/
+
+# Sitemap location
+Sitemap: https://narushinada.github.io/sitemap.xml
