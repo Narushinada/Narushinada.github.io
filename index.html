@@ -28,6 +28,7 @@
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="css/style.css" rel="stylesheet"/>
+    <link href="css/chatbot.css" rel="stylesheet"/>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
     <script type="application/ld+json">
@@ -457,6 +458,7 @@
           <div class="col-md-6 text-md-end small">
             <a href="./pages/polityka-prywatnosci/" class="text-white-50 me-3">Polityka prywatności</a>
             <a href="./pages/regulamin/" class="text-white-50">Regulamin</a>
+            <p class="mt-2 mb-0 text-white-50"><i class="fas fa-robot me-1"></i> Masz pytania? Skorzystaj z naszego chatbota!</p>
           </div>
         </div>
       </div>
@@ -465,6 +467,7 @@
     <!-- Bootstrap core JavaScript -->
     <script src="assets/js/popper.min.js" defer></script>
     <script src="bootstrap/js/bootstrap.min.js" defer></script>
+    <script src="assets/js/chatbot-enhancement.js" defer></script>
     
     <!-- Custom JavaScript -->
     <script>
@@ -490,6 +493,107 @@
         item.addEventListener("mouseleave", function () {
           this.querySelector(".rounded-circle").style.transform = "scale(1)";
         });
+      });
+    </script>
+    
+    <!-- Tidio AI Chat Bot -->
+    <script src="//code.tidio.co/mlxnmrcwlxnvvjxnupwynxcxpsrijpoi.js" async></script>
+    
+    <!-- Chat Bot Config -->
+    <script>
+      document.addEventListener("tidioChat-ready", function() {
+        // Konfiguracja języka chatbota
+        tidioChat.setColorPalette("#4caf50"); // Zielony kolor dopasowany do tematyki kulinarnej
+        tidioChat.setLanguage("pl"); // Ustawienie języka polskiego
+        
+        // Konfiguracja wiadomości powitalnej
+        tidioChat.on("open", function() {
+          if (tidioChat.messageHistory.length <= 1) {
+            tidioChat.sendMessage({
+              type: "bot",
+              content: "Witaj na stronie Kronikarz Kulinarny! 👋 W czym mogę Ci pomóc? Mogę zasugerować przepisy, odpowiedzieć na pytania dotyczące gotowania lub pomóc w nawigacji po stronie."
+            });
+          }
+        });
+        
+        // Dodanie własnego przycisku, który lepiej pasuje do designu strony
+        tidioChat.setParentElement(document.body);
+        tidioChat.setChatIframeStyles({
+          borderRadius: "15px",
+          boxShadow: "0 10px 30px rgba(0, 0, 0, 0.15)"
+        });
+        
+        // Inicjalizacja z danymi przepisów dla lepszych odpowiedzi
+        if (typeof recipeData !== 'undefined' && typeof cookingFAQ !== 'undefined') {
+          console.log("Wzbogacanie chatbota o dane przepisów");
+          // To zintegrowałoby się z API Tidio, jeśli byłoby dostępne
+          trainChatbotWithRecipes('pl');
+        }
+        
+        // Pokazanie powiadomienia dla nowych użytkowników
+        const firstVisit = !localStorage.getItem('chatbotNotified');
+        if (firstVisit) {
+          // Dodaj powiadomienie o chatbocie
+          setTimeout(function() {
+            const notification = document.createElement('div');
+            notification.className = 'chatbot-notification';
+            notification.innerHTML = `
+              <div class="chatbot-notification-close" role="button" tabindex="0" aria-label="Zamknij powiadomienie">&times;</div>
+              <p><strong>Potrzebujesz pomocy?</strong></p>
+              <p>Zadaj pytanie naszemu chatbotowi AI! Może pomóc Ci znaleźć przepisy lub rozwiązać problemy kulinarne.</p>
+            `;
+            document.body.appendChild(notification);
+            
+            // Pokaż powiadomienie po chwili
+            setTimeout(() => {
+              notification.classList.add('show');
+            }, 100);
+            
+            // Obsługa zamykania powiadomienia
+            const closeBtn = notification.querySelector('.chatbot-notification-close');
+            closeBtn.addEventListener('click', function() {
+              notification.classList.remove('show');
+              setTimeout(() => {
+                notification.remove();
+              }, 500);
+            });
+            
+            // Dodanie dostępności z klawiatury
+            closeBtn.addEventListener('keydown', function(e) {
+              if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                notification.classList.remove('show');
+                setTimeout(() => {
+                  notification.remove();
+                }, 500);
+              }
+            });
+            
+            // Zamknij automatycznie po 10 sekundach
+            setTimeout(() => {
+              notification.classList.remove('show');
+              setTimeout(() => {
+                notification.remove();
+              }, 500);
+            }, 10000);
+            
+            // Zapamiętaj, że powiadomienie zostało pokazane
+            localStorage.setItem('chatbotNotified', 'true');
+          }, 5000);
+          
+          // Dodaj efekt pulsowania do przycisku chatbota
+          setTimeout(function() {
+            const chatButton = document.querySelector('.tidio-chat-button');
+            if (chatButton) {
+              chatButton.classList.add('new-visitor');
+              
+              // Usuń efekt pulsowania po kliknięciu
+              chatButton.addEventListener('click', function() {
+                chatButton.classList.remove('new-visitor');
+              });
+            }
+          }, 1000);
+        }
       });
     </script>
   </body>
