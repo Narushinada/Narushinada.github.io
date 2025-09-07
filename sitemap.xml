@@ -5,6 +5,7 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
+<!-- Main Pages -->
 <url>
   <loc>https://narushinada.github.io/</loc>
   <lastmod>2025-09-07T00:00:00+00:00</lastmod>
@@ -23,6 +24,8 @@
   <changefreq>monthly</changefreq>
   <priority>0.7</priority>
 </url>
+
+<!-- Polish Recipes Pages -->
 <url>
   <loc>https://narushinada.github.io/pages/przepisy/</loc>
   <lastmod>2025-09-07T00:00:00+00:00</lastmod>
@@ -30,10 +33,60 @@
   <priority>0.9</priority>
 </url>
 <url>
+  <loc>https://narushinada.github.io/pages/przepisy/sniadania/</loc>
+  <lastmod>2025-09-07T00:00:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://narushinada.github.io/pages/przepisy/obiady/</loc>
+  <lastmod>2025-09-07T00:00:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://narushinada.github.io/pages/przepisy/desery/</loc>
+  <lastmod>2025-09-07T00:00:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://narushinada.github.io/pages/przepisy/sniadania/tost-z-awokado.html</loc>
+  <lastmod>2025-09-07T00:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+
+<!-- English Pages -->
+<url>
   <loc>https://narushinada.github.io/pages/en/</loc>
   <lastmod>2025-09-07T00:00:00+00:00</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://narushinada.github.io/pages/en/recipes/</loc>
+  <lastmod>2025-09-07T00:00:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://narushinada.github.io/pages/en/recipes/breakfast/</loc>
+  <lastmod>2025-09-07T00:00:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://narushinada.github.io/pages/en/recipes/dinner/</loc>
+  <lastmod>2025-09-07T00:00:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://narushinada.github.io/pages/en/recipes/desserts/</loc>
+  <lastmod>2025-09-07T00:00:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.6</priority>
 </url>
 
 </urlset>
