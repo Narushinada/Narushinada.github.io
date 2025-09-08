@@ -57,6 +57,38 @@
   <priority>0.7</priority>
 </url>
 
+<url>
+  <loc>https://narushinada.github.io/pages/przepisy/desery/klasyczne-czekoladowe-brownies.html</loc>
+  <lastmod>2025-09-08T00:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://narushinada.github.io/pages/przepisy/obiady/tajska-zupa-curry-z-mlekiem-kokosowym.html</loc>
+  <lastmod>2025-09-08T00:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+
+<url>
+  <loc>https://narushinada.github.io/pages/przepisy/owoce-morza/</loc>
+  <lastmod>2025-09-08T00:00:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://narushinada.github.io/pages/przepisy/napoje/</loc>
+  <lastmod>2025-09-08T00:00:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://narushinada.github.io/pages/przepisy/fast-food/</loc>
+  <lastmod>2025-09-08T00:00:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+
 <!-- English Pages -->
 <url>
   <loc>https://narushinada.github.io/pages/en/</loc>
