@@ -76,8 +76,7 @@
     
     
   </head>
-  <!-- Tidio AI Chat Bot -->
-  <script src="//code.tidio.co/8dihy4yrpw3zjcyty3tphfdhxovaayad.js" async></script>
+  
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" aria-label="Main navigation">
       <div class="container">
@@ -486,105 +485,7 @@
         });
       });
     </script>
-    
-    
-    
-    <!-- Chat Bot Config -->
-    <script>
-      document.addEventListener("tidioChat-ready", function() {
-        // Configure chatbot language
-        tidioChat.setColorPalette("#4caf50"); // Green color to match the culinary theme
-        tidioChat.setLanguage("en"); // Set English language
-        
-        // Set welcome message
-        tidioChat.on("open", function() {
-          if (tidioChat.messageHistory.length <= 1) {
-            tidioChat.sendMessage({
-              type: "bot",
-              content: "Welcome to Culinary Chronicles! 👋 How can I help you today? I can suggest recipes, answer cooking questions, or help you navigate the website."
-            });
-          }
-        });
-        
-        // Add custom button that better matches the site design
-        tidioChat.setParentElement(document.body);
-        tidioChat.setChatIframeStyles({
-          borderRadius: "15px",
-          boxShadow: "0 10px 30px rgba(0, 0, 0, 0.15)"
-        });
-        
-        // Initialize with recipe data for better responses
-        if (typeof recipeData !== 'undefined' && typeof cookingFAQ !== 'undefined') {
-          console.log("Enhancing chatbot with recipe data");
-          // This would integrate with Tidio's API if available
-          trainChatbotWithRecipes('en');
-        }
-        
-        // Show notification for first-time visitors
-        const firstVisit = !localStorage.getItem('chatbotNotified');
-        if (firstVisit) {
-          // Add chatbot notification
-          setTimeout(function() {
-            const notification = document.createElement('div');
-            notification.className = 'chatbot-notification';
-            notification.innerHTML = `
-              <div class="chatbot-notification-close" role="button" tabindex="0" aria-label="Close notification">&times;</div>
-              <p><strong>Need help?</strong></p>
-              <p>Ask our AI chatbot! It can help you find recipes or solve culinary challenges.</p>
-            `;
-            document.body.appendChild(notification);
-            
-            // Show notification after a brief delay
-            setTimeout(() => {
-              notification.classList.add('show');
-            }, 100);
-            
-            // Handle closing the notification
-            const closeBtn = notification.querySelector('.chatbot-notification-close');
-            closeBtn.addEventListener('click', function() {
-              notification.classList.remove('show');
-              setTimeout(() => {
-                notification.remove();
-              }, 500);
-            });
-            
-            // Add keyboard accessibility
-            closeBtn.addEventListener('keydown', function(e) {
-              if (e.key === 'Enter' || e.key === ' ') {
-                e.preventDefault();
-                notification.classList.remove('show');
-                setTimeout(() => {
-                  notification.remove();
-                }, 500);
-              }
-            });
-            
-            // Auto-close after 10 seconds
-            setTimeout(() => {
-              notification.classList.remove('show');
-              setTimeout(() => {
-                notification.remove();
-              }, 500);
-            }, 10000);
-            
-            // Remember that notification has been shown
-            localStorage.setItem('chatbotNotified', 'true');
-          }, 5000);
-          
-          // Add pulsing effect to chatbot button
-          setTimeout(function() {
-            const chatButton = document.querySelector('.tidio-chat-button');
-            if (chatButton) {
-              chatButton.classList.add('new-visitor');
-              
-              // Remove pulsing effect on click
-              chatButton.addEventListener('click', function() {
-                chatButton.classList.remove('new-visitor');
-              });
-            }
-          }, 1000);
-        }
-      });
-    </script>
+    <!-- Tidio AI Chat Bot -->
+  <script src="//code.tidio.co/8dihy4yrpw3zjcyty3tphfdhxovaayad.js" async></script>
   </body>
 </html>
